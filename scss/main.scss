@@ -1,0 +1,99 @@
+@import "fonts", "mixin", "variable";
+
+body {
+  background-image: url("/images/bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  img {
+    width: 54px;
+  }
+}
+
+.bg-content {
+  background-image: url("/images/welcom-pict.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.text-content {
+  h2 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 84px;
+    letter-spacing: 0.2px;
+    color: #000000;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 22px;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #696974;
+  }
+
+  .item {
+    justify-content: center;
+
+    .time {
+      width: 68px;
+      height: 68px;
+      font-family: "Nunito";
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #f1e21a;
+      background-color: #122959;
+      border-radius: 8px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 18px;
+      padding-top: 7px;
+    }
+
+    p {
+      font-family: "Nunito";
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      text-align: center;
+      color: #122959;
+    }
+  }
+
+  .email-input {
+    p {
+      font-weight: normal;
+      font-size: 18px;
+      align-items: center;
+      letter-spacing: 0.2px;
+      color: #696974;
+    }
+
+    .email {
+      width: 320px;
+      height: 58px;
+      border: 1px solid #274a7f;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .btn-primary {
+      width: 120px;
+      height: 58px;
+
+      background: #122959;
+      border-radius: 8px;
+    }
+
+    & ::placeholder {
+      padding-left: 20px !important;
+      font-weight: normal;
+      font-size: 20px;
+      color: #c4c4c4;
+    }
+  }
+}

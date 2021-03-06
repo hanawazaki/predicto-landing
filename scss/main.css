@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+  background-image: url("/images/bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand img {
+  width: 54px;
+}
+
+.bg-content {
+  background-image: url("/images/welcom-pict.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.text-content h2 {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 84px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.text-content h4 {
+  font-weight: normal;
+  font-size: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2px;
+  color: #696974;
+}
+
+.text-content .item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-content .item .time {
+  width: 68px;
+  height: 68px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #f1e21a;
+  background-color: #122959;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 18px;
+  padding-top: 7px;
+}
+
+.text-content .item p {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #122959;
+}
+
+.text-content .email-input p {
+  font-weight: normal;
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2px;
+  color: #696974;
+}
+
+.text-content .email-input .email {
+  width: 320px;
+  height: 58px;
+  border: 1px solid #274a7f;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.text-content .email-input .btn-primary {
+  width: 120px;
+  height: 58px;
+  background: #122959;
+  border-radius: 8px;
+}
+
+.text-content .email-input ::-webkit-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.text-content .email-input :-ms-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.text-content .email-input ::-ms-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.text-content .email-input ::placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+/*# sourceMappingURL=main.css.map */
