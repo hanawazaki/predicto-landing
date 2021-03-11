@@ -11,12 +11,29 @@ body {
 }
 
 .bg-content {
+  position: relative;
+}
+
+.bg-content:before {
+  content: "";
   background-image: url("/images/welcom-pict.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
-.text-content h2 {
+@media screen and (max-width: 576px) {
+  .bg-content:before {
+    background-position: top center;
+    opacity: 0.2;
+  }
+}
+
+.bg-content .text-content h2 {
   font-weight: bold;
   font-size: 56px;
   line-height: 84px;
@@ -24,7 +41,14 @@ body {
   color: #000000;
 }
 
-.text-content h4 {
+@media screen and (max-width: 576px) {
+  .bg-content .text-content h2 {
+    line-height: 65px;
+    margin-top: 2rem;
+  }
+}
+
+.bg-content .text-content h4 {
   font-weight: normal;
   font-size: 22px;
   -webkit-box-align: center;
@@ -34,13 +58,19 @@ body {
   color: #696974;
 }
 
-.text-content .item {
+@media screen and (max-width: 576px) {
+  .bg-content .text-content h4 {
+    color: #000000;
+  }
+}
+
+.bg-content .text-content .time-launch .item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.text-content .item .time {
+.bg-content .text-content .time-launch .item .time {
   width: 68px;
   height: 68px;
   font-family: "Nunito";
@@ -50,22 +80,34 @@ body {
   color: #f1e21a;
   background-color: #122959;
   border-radius: 8px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 30px;
   margin-top: 18px;
   padding-top: 7px;
 }
 
-.text-content .item p {
+.bg-content .text-content .time-launch .item p {
   font-family: "Nunito";
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.6px;
   text-align: center;
   color: #122959;
+  margin-right: 30px;
 }
 
-.text-content .email-input p {
+@media screen and (max-width: 576px) {
+  .bg-content .text-content .time-launch {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.bg-content .text-content .email-input {
+  position: relative;
+}
+
+.bg-content .text-content .email-input p {
   font-weight: normal;
   font-size: 18px;
   -webkit-box-align: center;
@@ -75,7 +117,7 @@ body {
   color: #696974;
 }
 
-.text-content .email-input .email {
+.bg-content .text-content .email-input .email {
   width: 320px;
   height: 58px;
   border: 1px solid #274a7f;
@@ -83,38 +125,92 @@ body {
   margin-right: 20px;
 }
 
-.text-content .email-input .btn-primary {
+.bg-content .text-content .email-input .email:focus {
+  border: 1px solid #274a7f;
+  outline: none;
+}
+
+.bg-content .text-content .email-input .email ::-webkit-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.bg-content .text-content .email-input .email :-ms-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.bg-content .text-content .email-input .email ::-ms-input-placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.bg-content .text-content .email-input .email ::placeholder {
+  padding-left: 20px !important;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width: 576px) {
+  .bg-content .text-content .email-input .email {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .bg-content .text-content .email-input .email ::-webkit-input-placeholder {
+    padding-left: 20px !important;
+    font-weight: normal;
+    font-size: 20px;
+    color: #c4c4c4;
+  }
+  .bg-content .text-content .email-input .email :-ms-input-placeholder {
+    padding-left: 20px !important;
+    font-weight: normal;
+    font-size: 20px;
+    color: #c4c4c4;
+  }
+  .bg-content .text-content .email-input .email ::-ms-input-placeholder {
+    padding-left: 20px !important;
+    font-weight: normal;
+    font-size: 20px;
+    color: #c4c4c4;
+  }
+  .bg-content .text-content .email-input .email ::placeholder {
+    padding-left: 20px !important;
+    font-weight: normal;
+    font-size: 20px;
+    color: #c4c4c4;
+  }
+}
+
+.bg-content .text-content .email-input .btn-primary {
   width: 120px;
   height: 58px;
   background: #122959;
   border-radius: 8px;
 }
 
-.text-content .email-input ::-webkit-input-placeholder {
-  padding-left: 20px !important;
-  font-weight: normal;
-  font-size: 20px;
-  color: #c4c4c4;
+@media screen and (max-width: 576px) {
+  .bg-content .text-content .email-input .btn-primary {
+    width: 100%;
+  }
 }
 
-.text-content .email-input :-ms-input-placeholder {
-  padding-left: 20px !important;
-  font-weight: normal;
-  font-size: 20px;
-  color: #c4c4c4;
-}
-
-.text-content .email-input ::-ms-input-placeholder {
-  padding-left: 20px !important;
-  font-weight: normal;
-  font-size: 20px;
-  color: #c4c4c4;
-}
-
-.text-content .email-input ::placeholder {
-  padding-left: 20px !important;
-  font-weight: normal;
-  font-size: 20px;
-  color: #c4c4c4;
+@media screen and (max-width: 576px) {
+  .bg-content .text-content .email-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
