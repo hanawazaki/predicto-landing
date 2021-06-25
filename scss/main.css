@@ -12,6 +12,7 @@ body {
 
 .bg-content {
   position: relative;
+  margin-bottom: 100px;
 }
 
 .bg-content:before {
@@ -123,6 +124,7 @@ body {
   border: 1px solid #274a7f;
   border-radius: 8px;
   margin-right: 20px;
+  padding-left: 20px;
 }
 
 .bg-content .text-content .email-input .email:focus {
@@ -131,28 +133,24 @@ body {
 }
 
 .bg-content .text-content .email-input .email ::-webkit-input-placeholder {
-  padding-left: 20px !important;
   font-weight: normal;
   font-size: 20px;
   color: #c4c4c4;
 }
 
 .bg-content .text-content .email-input .email :-ms-input-placeholder {
-  padding-left: 20px !important;
   font-weight: normal;
   font-size: 20px;
   color: #c4c4c4;
 }
 
 .bg-content .text-content .email-input .email ::-ms-input-placeholder {
-  padding-left: 20px !important;
   font-weight: normal;
   font-size: 20px;
   color: #c4c4c4;
 }
 
 .bg-content .text-content .email-input .email ::placeholder {
-  padding-left: 20px !important;
   font-weight: normal;
   font-size: 20px;
   color: #c4c4c4;
@@ -164,25 +162,21 @@ body {
     width: 100%;
   }
   .bg-content .text-content .email-input .email ::-webkit-input-placeholder {
-    padding-left: 20px !important;
     font-weight: normal;
     font-size: 20px;
     color: #c4c4c4;
   }
   .bg-content .text-content .email-input .email :-ms-input-placeholder {
-    padding-left: 20px !important;
     font-weight: normal;
     font-size: 20px;
     color: #c4c4c4;
   }
   .bg-content .text-content .email-input .email ::-ms-input-placeholder {
-    padding-left: 20px !important;
     font-weight: normal;
     font-size: 20px;
     color: #c4c4c4;
   }
   .bg-content .text-content .email-input .email ::placeholder {
-    padding-left: 20px !important;
     font-weight: normal;
     font-size: 20px;
     color: #c4c4c4;
@@ -194,6 +188,7 @@ body {
   height: 58px;
   background: #122959;
   border-radius: 8px;
+  border: none;
 }
 
 @media screen and (max-width: 576px) {
